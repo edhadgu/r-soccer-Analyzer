@@ -1,0 +1,8 @@
+<form method="POST" action="{{ url_for('test') }}">
+  {% for o in data %}
+  <li><a href="{{ o.url }}" value="{{ o.title }}">{{ o.title }}</a></li>
+  {% endfor %}
+  <form>
+    <input type="button" value="Go back!" onclick="history.back()">
+  </form>
+</form>

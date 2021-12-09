@@ -26,22 +26,5 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    
-    def getResponse(topic, timeInterval):
-        result = ''
-        for submission in reddit.subreddit("soccer").search("goal", time_filter=str(timeInterval), limit=1): #change to be based on input (not just goal)
-            #timeInterval doesn't change anything
-            result += submission.title + '\n'
-        return str(result)
-
-    @app.route('/')
-    def index():
-        return render_template('index.html', data=[{'topic': 'best goal of the'}, {'topic': 'fan favorite of the'}, {'topic': 'best player of the'}, {'topic': 'most popular team of the'}, {'topic': 'top user of the'}, {'topic': 'clip of the'}, {'topic': 'top source of the'}], timeInterval=[{'timeInterval': 'day'}, {'timeInterval': 'week'}, {'timeInterval': 'month'}, {'timeInterval': 'year'}, {'timeInterval': 'all'}])
-    @ app.route("/test", methods=['GET', 'POST'])
-    def test():
-        topic=request.form.get('topic_select')
-        timeInterval=request.form.get('timeInterval_select')
-        print(timeInterval)
-        return(getResponse(topic,timeInterval))
 
     return app
