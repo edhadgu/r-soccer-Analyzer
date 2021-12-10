@@ -36,9 +36,12 @@ If there are no errors, you should be able to click the localhost link and acces
 # Libraries Used
 1. [PRAW](https://praw.readthedocs.io/en/stable/index.html)
      - This is the main API that I used to get access to Reddit posts, comments, and users.
-2. [Flask](https://flask.palletsprojects.com/en/2.0.x/) - UI
-3. [rank_bm25](https://pypi.org/project/rank-bm25/) - NLP
-4. [spacy](https://spacy.io/usage) - NLP
+2. [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+     - Main UI of the app
+4. [rank_bm25](https://pypi.org/project/rank-bm25/)
+     - Used for BM25Okapi queries when getting top goals and news reports
+6. [spacy](https://spacy.io/usage)
+     - Used for token tagging when figuring out if a token is a player or team name
 
 rank_bm25 and spacy must be downloaded according to the links provided in order for the app to work
 
