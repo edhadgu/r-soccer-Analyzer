@@ -7,6 +7,10 @@ An easy way to see the best parts of r/soccer all in one place!
 
 Clone this git repo
 
+download [Flask](https://flask.palletsprojects.com/en/2.0.x/installation/)
+```
+pip install flask
+```
 Create a reddit app [here](https://www.reddit.com/prefs/apps) so that you can get your `client_id` and `client_secret`
 
 Add a `praw.ini` file under the `flaskr` directory
@@ -25,6 +29,8 @@ The values can be found here after you make your Reddit app:
 ![](/creds-tutorial.png)
 
 You will not be able to call any PRAW functions without this step
+
+Next, you need to install the libraries used: [rankbm25](https://pypi.org/project/rank-bm25/) and [spacy](https://spacy.io/usage):
 
 # Running the Application
 NOTE: I am using the latest version of Python
