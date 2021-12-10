@@ -1,7 +1,10 @@
 <form method="POST" action="{{ url_for('test') }}">
   <p>If you are looking for a goal, due to copyright, not all videos will be able to view</p>
   {% for o in data %}
-  <li><a href="{{ o.url }}" value="{{ o.title }}">{{ o.title }}</a></li>
+  <li value="{{ o.submission.title }}">{{ o.submission.title }}</li> 
+    <ul>
+      <li value="{{ o.body }}">{{ o.body }}</li>
+    </ul>
   {% endfor %}
   <form>
     <input type="button" value="Go back!" onclick="history.back()">
