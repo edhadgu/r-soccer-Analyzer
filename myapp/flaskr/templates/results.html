@@ -1,5 +1,8 @@
+<head>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+</head>
 <form method="POST" action="{{ url_for('test') }}">
-  <p>If you are looking for a goal, due to copyright, not all videos will be able to view</p>
+  <p>Links to videos may be unavaliable due to copyright</p>
   {% for o in data %}
   <li><a href="{{ o.url }}" value="{{ o.title }}">{{ o.title }}</a></li>
   {% endfor %}

@@ -1,5 +1,10 @@
+<head>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+</head>
 <form method="POST" action="{{ url_for('test') }}">
-  <span>Find me the</span>
+  <h1>r/Soccer Analyzer</h1>
+  <h3>by Elias Hadgu</h3>
+  <span>Find Me the</span>
   <select name="topic_select">
     {% for o in data %}
     <option value="{{ o }}">{{ o }}</option>
