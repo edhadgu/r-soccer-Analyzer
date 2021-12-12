@@ -1,7 +1,11 @@
-# r/soccer analyzer
+# r/soccer analyzer (Documentation is in this README)
 ## by Elias Hadgu
 
 An easy way to see the best parts of r/soccer all in one place!
+
+# Presentation
+
+https://drive.google.com/file/d/1v5ShiY6XSafM-a8gsoZXDIyyk4ckNUVW/view?usp=sharing
 
 # Getting started
 
