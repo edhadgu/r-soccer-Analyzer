@@ -7,7 +7,7 @@ import spacy
 reddit = praw.Reddit("user")
 
 def contains_number_or_special(s):
-    special_characters = '"!@#$%^&*()-+?_=,<>/"'
+    special_characters = '"!@#$%^&*()-+?_=,<>/[]"'
     for char in s:
         if char.isdigit() or char in special_characters or char == "'":
             return True
